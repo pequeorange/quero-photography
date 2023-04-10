@@ -20,15 +20,23 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f7fafd
-- Buttons, icons - orange #d79491
-- Headings text - dark gray #393a34
-- Body text - dark gray #676861
+- Buttons, icons - orange #f19c48;
+- Headings text - dark gray #393a34;
+- Body text - dark gray var #676861;
 ******************************************/
 
 
 /**************************/
 /*     General Styles     */
 /**************************/
+
+*{
+	--color1:#f7fafd;
+	--color2:#f19c48;
+	--color3:#393a34;
+	--color4:#676861;
+
+}
 body,
 html {
     width: 100%;
@@ -36,12 +44,12 @@ html {
 }
 
 body, p {
-	color: #676861; 
+	color: var(--color4); 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
 h1 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 2.75rem;
 	line-height: 3.375rem;
@@ -49,7 +57,7 @@ h1 {
 }
 
 h2 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 2.25rem;
 	line-height: 2.75rem;
@@ -58,7 +66,7 @@ h2 {
 }
 
 h3 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
@@ -67,7 +75,7 @@ h3 {
 }
 
 h4 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -76,7 +84,7 @@ h4 {
 }
 
 h5 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 1.25rem;
 	font-family: "Poppins";
@@ -84,7 +92,7 @@ h5 {
 }
 
 h6 {
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 1rem;
 	font-family: "Poppins";
@@ -117,12 +125,12 @@ h6 {
 }
 
 a {
-	color: #676861;
+	color: var(--color4);
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #676861;
+	color: var(--color4);
 	text-decoration: underline;
 }
 
@@ -139,7 +147,7 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f7fafd;
+	background-color: color1;
 }
 
 .hr-heading {
@@ -194,9 +202,9 @@ a:hover {
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #393a34;
+	border: 1px solid var(--color3);
 	background-color: transparent;
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -205,8 +213,8 @@ a:hover {
 }
 
 .btn-outline-reg:hover {
-	border: 1px solid #393a34;
-	background-color: #393a34;
+	border: 1px solid var(--color3);
+	background-color: var(--color3);
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -214,9 +222,9 @@ a:hover {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #393a34;
+	border: 1px solid var(--color3);
 	background-color: transparent;
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -225,8 +233,8 @@ a:hover {
 }
 
 .btn-outline-lg:hover {
-	border: 1px solid #393a34;
-	background-color: #393a34;
+	border: 1px solid var(--color3);
+	background-color: var(--color3);
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -234,9 +242,9 @@ a:hover {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #393a34;
+	border: 1px solid var(--color3);
 	background-color: transparent;
-	color: #393a34;
+	color: var(--color3);
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -245,8 +253,8 @@ a:hover {
 }
 
 .btn-outline-sm:hover {
-	border: 1px solid #393a34;
-	background-color: #393a34;
+	border: 1px solid var(--color3);
+	background-color: var(--color3);
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -273,7 +281,7 @@ a:hover {
 .form-control-textarea:focus + .label-control,
 .form-control-textarea.notEmpty + .label-control {
 	top: 0.125rem;
-	color: #393a34;
+	color: var(--color3);
 	opacity: 1;
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -288,7 +296,7 @@ a:hover {
 	padding-left: 1.25rem;
 	border: 1px solid #dadada;
 	background-color: #ffffff;
-	color: #676861;
+	color: var(--color4);
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
@@ -323,7 +331,7 @@ select {
 	padding-left: 1.25rem;
 	border: 1px solid #dadada;
 	background-color: #ffffff;
-	color: #676861;
+	color: var(--color4);
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 	transition: all 0.2s;
@@ -437,7 +445,7 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-text {
-	color: #676861;
+	color: var(--color4);
 	font-weight: 700;
 	font-size: 1.625rem;
 	line-height: 1rem;
@@ -474,7 +482,7 @@ input[type='checkbox'] {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #676861;
+	color: var(--color4);
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -491,7 +499,7 @@ input[type='checkbox'] {
 .navbar .fab {
 	margin-right: 0.5rem;
 	font-size: 1rem;
-	color: #393a34;
+	color: var(--color3);
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -511,7 +519,7 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
-	background-color: #f7fafd;
+	background-color: color1;
 }
 
 .header .area-1 {
@@ -538,7 +546,7 @@ input[type='checkbox'] {
 }
 
 .header .fas {
-	color: #393a34;
+	color: var(--color3);
 	font-size: 3rem;
 	transition: all 0.2s; 
 }
@@ -753,7 +761,7 @@ input[type='checkbox'] {
 }
 
 .form-1 .fa-stack:hover .fa-stack-2x {
-	color: #393a34;
+	color: var(--color3);
 }
 
 .form-1 .fa-stack:hover .fa-stack-1x {
@@ -796,7 +804,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #393a34;
+	background-color: var(--color3);
 }
 
 
@@ -820,7 +828,7 @@ a:hover.back-to-top {
 
 .ex-basic-1 .text-box {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #f7fafd;
+	background-color: color1;
 }
 
 .ex-cards-1 .card {
@@ -855,7 +863,7 @@ a:hover.back-to-top {
 .ex-form-1 .text-box {
 	padding: 2.5rem 1.5rem 1.5rem 1.75rem;
 	border-radius: 10px;
-	background-color: #f7fafd;
+	background-color: color1;
 }
 
 
